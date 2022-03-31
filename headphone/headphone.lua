@@ -1,7 +1,6 @@
 function bluetoothSwitch(state)
   -- state: 0(off), 1(on)
   cmd = "/usr/local/bin/blueutil --power "..(state)
-  hs.notify.new({title="Hammerspoon", informativeText=cmd}):send()
   result = hs.osascript.applescript(string.format('do shell script "%s"', cmd))
 end
 
