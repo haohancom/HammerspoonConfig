@@ -1,7 +1,7 @@
 print('==================================================')
 require "headphone.headphone"
 require "reload.reload"
-require "ime.ime"
+--require "ime.ime"
 
 
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", function()
